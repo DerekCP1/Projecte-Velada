@@ -1,2 +1,2 @@
 # Projecte-Velada
-hola hola
+hola
