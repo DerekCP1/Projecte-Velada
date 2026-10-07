@@ -1,3 +1,4 @@
 # Projecte-Velada
-hola
-# GRUPO
+Holaaaa Bon dia
+# CREADORES
+Derek, Ehren y David
