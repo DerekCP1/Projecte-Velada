@@ -1,2 +1,5 @@
 # Projecte-Velada
-hola mundo
+Holaaaa Bon dia
+# CREADORES
+Derek, Ehren y David
+####
