@@ -1,14 +1,67 @@
+/* Disseny general */
 body {
-    background-color: lightcoral;
-    font-family: Arial;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
 }
 
 h1 {
-    color: black;
-    text-align: center;
+  color: #e50914;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
 }
 
-button {
-    padding: 10px;
-    margin: 10px;
+.subtitol {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Targeta explicativa */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.card h2 {
+  color: #f39c12;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* Botons d'acció */
+.button-group {
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 8px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #b80710;
+}
+
+.highlight {
+  color: #e50914;
+  font-weight: bold;
 }
