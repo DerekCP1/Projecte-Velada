@@ -1,0 +1,14 @@
+body {
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+}
