@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <title>La Velada 7</title>
+  <meta charset="UTF-8">
+  <title>La Velada de l'Any 7</title>
+  <style>
+    /* Disseny general (mateix estil fosquet i modern) */
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
 
- 
-    <link rel="stylesheet" href="css/main.css">
+    h1 {
+      color: #e50914;
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+
+    .subtitol {
+      color: #aaa;
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    /* Targeta explicativa sencilleta */
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 15px auto;
+      padding: 20px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .card h2 {
+      color: #f39c12;
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+
+    /* Botons d'acció principals */
+    .button-group {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 8px;
+      background-color: #e50914;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #b80710;
+    }
+
+    .highlight {
+      color: #e50914;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>La Velada de l'Any 7</h1>
+  <h1>🥊 La Velada de l'Any 7</h1>
+  <div class="subtitol">El gran esdeveniment de boxa i espectacle de l'any</div>
 
-    <p>Aquesta és la pàgina d'inici de la Velada 7.</p>
+  <!-- Resum de l'esdeveniment super senzill -->
+  <div class="card">
+    <h2>Què és La Velada?</h2>
+    <p>
+      Benvinguts a <strong>La Velada 7</strong>! Un gran xou on diferents creadors de contingut i lluitadors s'enfronten al ring en <span class="highlight">5 combats d'infart</span>.
+    </p>
+    <p>
+      A més de boxa, tindrem actuacions musicals en directe de <strong>Good Bunny</strong> i <strong>Clara Vega</strong>. Una nit plena d'emoció, xou i molta adrenalina!
+    </p>
+  </div>
 
-    <button id="btn-combats">Veure combats</button>
-    <button id="btn-horaris">Veure horaris</button>
+  <!-- Botons principals per anar a combats o horaris -->
+  <div class="button-group">
+    <button id="btn-combats" class="btn">🥊 Veure Combats</button>
+    <button id="btn-horaris" class="btn">⏰ Veure Horaris</button>
+  </div>
 
+  <!-- Arxiu JavaScript -->
+  <script src="js/main.js"></script>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
