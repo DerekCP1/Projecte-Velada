@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combats - La Velada de l'Any 7</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <header>
+        <h1>Cartellera de combats</h1>
+    </header>
+
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Combat</th>
+                    <th>Categoria</th>
+                    <th>Assalts</th>
+                    <th>Tipus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ehren el verdugo vs. Fiona "de la villa de la hoja"</td>
+                    <td>Lleuger</td>
+                    <td>4 × 2 min</td>
+                    <td>Obertura</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Derek el cazador de conejas vs. Judith pam huevo</td>
+                    <td>Pesos muy muy pesados</td>
+                    <td>4 × 2 min</td>
+                    <td>Esportiu</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>David el termo vs. Juan "el archienemigo" Heredia</td>
+                    <td>Pes ploma</td>
+                    <td>5 × 2 min</td>
+                    <td>Masculí</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Pau la V vs. Ivan del Pozo</td>
+                    <td>Pes mitjà</td>
+                    <td>5 × 2 min</td>
+                    <td>Revenja</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sasha "La matriarca" vs. Cloe Undertaker</td>
+                    <td>Pes pesat</td>
+                    <td>6 × 2 min</td>
+                    <td>Combat estel·lar</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Actuacions musicals</h2>
+        <ul>
+            <li><strong>Obertura:</strong> grup fictici Neon Barri (pop urbà).</li>
+            <li><strong>Abans del combat estel·lar:</strong> Clara Vega (cantautora).</li>
+        </ul>
+
+        <h2>Fitxa d'exemple d'un lluitador (Marc "El Bisbe" Ferrer)</h2>
+        <ul>
+            <li><strong>Edat:</strong> 29 anys.</li>
+            <li><strong>Alçada i pes:</strong> 1,92 m i 98 kg.</li>
+            <li><strong>Estil:</strong> pegador, guàrdia ortodoxa.</li>
+            <li><strong>Preparació:</strong> 10 setmanes amb entrenador professional.</li>
+            <li><strong>Frase del combat:</strong> "Aquesta nit no hi ha rematada."</li>
+        </ul>
+
+        <p><a href="../index.html">Tornar a l'inici</a></p>
+    </main>
+</body>
+</html>
