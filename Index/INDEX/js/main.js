@@ -1,5 +1,5 @@
 document.getElementById("btn-combats").onclick = function() {
-    alert("Aquí anirien els combats.");
+    window.location.href = "combats.html";
 };
 
 document.getElementById("btn-horaris").onclick = function() {
