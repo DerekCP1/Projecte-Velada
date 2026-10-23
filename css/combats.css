@@ -1,69 +1,48 @@
- body {
-      background-color: #121212;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
+/* Estils generals */
+body {
+    background-color: lightgray;
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
 
-    h1 {
-      color: #e50914;
-      text-transform: uppercase;
-    }
-    .card {
-      background-color: #1e1e1e;
-      border: 2px solid #333;
-      border-radius: 10px;
-      max-width: 650px;
-      margin: 20px auto;
-      padding: 15px;
-    }
-    .card.main-event {
-      border-color: #e50914;
-    }
+    /* ACTIVEM GRID */
+    display: grid;
 
-    .title {
-      color: #e50914;
-      font-weight: bold;
-      font-size: 1.1rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-    }
+    /* 3 files: títol, text, botons */
+    grid-template-rows: auto auto auto;
 
-    .vs {
-      font-size: 1.5rem;
-      color: #e50914;
-      font-weight: bold;
-      margin: 10px 0;
-    }
+    /* Centrem tot */
+    justify-items: center;
+    align-items: center;
 
-    .fighter-box {
-      background: #2a2a2a;
-      padding: 10px;
-      border-radius: 5px;
-      margin: 5px 0;
-      text-align: left;
-    }
+    /* Separació entre files */
+    row-gap: 20px;
+}
 
-    .fighter-name {
-      font-weight: bold;
-      color: #fff;
-    }
+/* Títol */
+h1 {
+    color: black;
+    text-align: center;
+}
 
-    .quote {
-      font-style: italic;
-      color: #f39c12;
-      font-size: 0.9rem;
-    }
+/* Paràgraf */
+p {
+    text-align: center;
+}
 
-    .btn-back {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #e50914;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+/* Contenidor dels botons amb GRID */
+.botones {
+    display: grid;
+
+    /* 2 columnes per als botons */
+    grid-template-columns: 1fr 1fr;
+
+    /* Separació entre botons */
+    column-gap: 20px;
+}
+
+/* Botons */
+button {
+    padding: 10px;
+    margin: 10px;
+}
