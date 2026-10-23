@@ -35,3 +35,21 @@ function actualitzarCompteEnrere() {
 
 actualitzarCompteEnrere();                  
 setInterval(actualitzarCompteEnrere, 1000); 
+
+// --- Enllaços del footer ---
+
+document.getElementById("privacitat").onclick = function() {
+    window.location.href = "html/privacitat.html";
+};
+
+document.getElementById("cookies").onclick = function() {
+    window.location.href = "html/cookies.html";
+};
+
+document.getElementById("avis").onclick = function() {
+    window.location.href = "html/avis.html";
+};
+
+document.getElementById("proteccio").onclick = function() {
+    window.location.href = "html/proteccio.html";
+};
