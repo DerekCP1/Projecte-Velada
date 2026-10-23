@@ -5,3 +5,7 @@ document.getElementById("btn-combats").onclick = function() {
 document.getElementById("btn-horaris").onclick = function() {
     window.location.href = "horaris.html";
 };
+
+document.getElementById("btn-combats").onclick = function() {
+    window.location.href = "faq.html";
+};
