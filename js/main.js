@@ -38,19 +38,19 @@ setInterval(actualitzarCompteEnrere, 1000);
 
 // --- Enllaços del footer ---
 
-document.getElementById("btn-privacitat").onclick = function() {
+document.getElementById("privacitat").onclick = function() {
     window.location.href = "privacitat.html";
 };
 
-document.getElementById("btn-cookies").onclick = function() {
+document.getElementById("cookies").onclick = function() {
     window.location.href = "cookies.html";
 };
 
-document.getElementById("btn-avis").onclick = function() {
+document.getElementById("avis").onclick = function() {
     window.location.href = "avis.html";
 };
 
-document.getElementById("btn-proteccio").onclick = function() {
+document.getElementById("proteccio").onclick = function() {
     window.location.href = "proteccio.html";
 };
 
