@@ -11,7 +11,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Contenidor desplegable (<details>) */
 details {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -22,7 +21,6 @@ details {
   text-align: left;
 }
 
-/* Pregunta que es clica (<summary>) */
 summary {
   font-weight: bold;
   font-size: 1.1rem;
@@ -35,14 +33,12 @@ summary:hover {
   color: #e50914;
 }
 
-/* Resposta dins del desplegable */
 details p {
   margin-top: 10px;
   color: #cccccc;
   line-height: 1.5;
 }
 
-/* Botó de tornar */
 .btn-back {
   display: inline-block;
   margin-top: 20px;
