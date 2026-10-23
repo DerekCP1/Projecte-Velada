@@ -1,4 +1,4 @@
-/* Disseny general */
+
 body {
   background-color: #121212;
   color: #ffffff;
@@ -20,7 +20,7 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* Targeta explicativa */
+
 .card {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -38,7 +38,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-/* Botons d'acció */
+
 .button-group {
   margin-top: 25px;
 }
