@@ -10,6 +10,22 @@ document.getElementById("btn-faq").onclick = function() {
     window.location.href = "faq.html";
 };
 
+document.getElementById("privacitat").onclick = function() {
+    window.location.href = "html/privacitat.html";
+};
+
+document.getElementById("cookies").onclick = function() {
+    window.location.href = "html/cookies.html";
+};
+
+document.getElementById("avis").onclick = function() {
+    window.location.href = "html/avis.html";
+};
+
+document.getElementById("proteccio").onclick = function() {
+    window.location.href = "html/proteccio.html";
+};
+
 var DATA_VELADA = new Date("2027-07-24T20:00:00").getTime();
 
 function actualitzarCompteEnrere() {
