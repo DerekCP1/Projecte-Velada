@@ -9,7 +9,7 @@ document.getElementById("btn-horaris").onclick = function() {
 document.getElementById("btn-faq").onclick = function() {
     window.location.href = "faq.html";
 };
-// Compte enrere fins a La Velada
+
 var DATA_VELADA = new Date("2027-07-24T20:00:00").getTime();
 
 function actualitzarCompteEnrere() {
@@ -33,5 +33,5 @@ function actualitzarCompteEnrere() {
   document.getElementById("segons").textContent = segons;
 }
 
-actualitzarCompteEnrere();                  // la primera vegada, sense esperar 1 s
-setInterval(actualitzarCompteEnrere, 1000); // i després cada segon
+actualitzarCompteEnrere();                  
+setInterval(actualitzarCompteEnrere, 1000); 
