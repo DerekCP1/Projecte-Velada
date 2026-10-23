@@ -65,3 +65,41 @@ h1 {
   color: #e50914;
   font-weight: bold;
 }
+.cartell {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: 15px auto;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+/* Compte enrere */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.countdown-box {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 15px 20px;
+  min-width: 80px;
+}
+
+.countdown-box span {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.countdown-box small {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
