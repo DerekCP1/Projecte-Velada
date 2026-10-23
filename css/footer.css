@@ -1,0 +1,27 @@
+/* Disseny del peu de pàgina */
+footer {
+  background-color: #1e1e1e;
+  border-top: 1px solid #333;
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Contenidor per posar els enllaços en línia horitzontal */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #e50914;
+}

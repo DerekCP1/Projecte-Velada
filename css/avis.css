@@ -1,0 +1,45 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #e50914;
+  text-transform: uppercase;
+}
+
+/* Targeta amb el contingut de l'avís legal */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.card p {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+/* Botó per tornar a l'inici */
+.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-back:hover {
+  background-color: #b80710;
+}
