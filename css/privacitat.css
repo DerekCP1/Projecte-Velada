@@ -11,7 +11,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Targeta amb la informació de privacitat */
 .card {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -28,7 +27,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* Botó per tornar a l'inici */
+
 .btn-back {
   display: inline-block;
   margin-top: 20px;
