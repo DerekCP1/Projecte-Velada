@@ -1,4 +1,4 @@
-/* Disseny del peu de pàgina */
+
 footer {
   background-color: #1e1e1e;
   border-top: 1px solid #333;
@@ -7,7 +7,6 @@ footer {
   margin-top: 40px;
 }
 
-/* Contenidor per posar els enllaços en línia horitzontal */
 .footer-links {
   display: flex;
   justify-content: center;
