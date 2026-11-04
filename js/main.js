@@ -54,3 +54,6 @@ document.getElementById("proteccio").onclick = function() {
     window.location.href = "proteccio.html";
 };
 
+document.getElementById("btn-entrades").onclick = function() {
+  window.location.href = "entrades.html";
+};
