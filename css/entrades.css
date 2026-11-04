@@ -11,7 +11,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Targeta del formulari */
+
 .card {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -33,7 +33,7 @@ h1 {
   font-weight: bold;
 }
 
-/* Camps de text, desplegables i números */
+
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
@@ -49,7 +49,7 @@ h1 {
   box-sizing: border-box;
 }
 
-/* Caixa del preu total */
+
 .price-box {
   background-color: #2a2a2a;
   border: 1px solid #e50914;
@@ -65,7 +65,7 @@ h1 {
   font-weight: bold;
 }
 
-/* Botons */
+
 .btn-submit {
   width: 100%;
   padding: 12px;
