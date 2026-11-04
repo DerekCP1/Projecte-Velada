@@ -1,0 +1,94 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #e50914;
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.price-box {
+  background-color: #2a2a2a;
+  border: 1px solid #e50914;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.price-box span {
+  font-size: 1.5rem;
+  color: #e50914;
+  font-weight: bold;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #b80710;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-back:hover {
+  background-color: #b80710;
+}
