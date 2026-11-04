@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -12,62 +11,74 @@
 
   <div class="card">
     <form id="form-entrades">
-     
-     
+
+      <!-- ZONA -->
       <div class="form-group">
         <label for="zona">Tria la zona:</label>
-        <select id="zona" required>
+        <select id="zona" name="zona" required>
           <option value="30">Pista (30 €)</option>
           <option value="50">Grada Baixa (50 €)</option>
           <option value="80">VIP Ring (80 €)</option>
         </select>
       </div>
 
-      
+      <!-- ENTRADES -->
       <div class="form-group">
         <label for="num-entrades">Nombre d'entrades (màx 4):</label>
-        <input type="number" id="num-entrades" min="1" max="4" value="1" required>
+        <input type="number" id="num-entrades" name="num-entrades"
+               min="1" max="4" value="1" required>
       </div>
 
-      
+      <!-- NOM -->
       <div class="form-group">
         <label for="nom">Nom i cognoms:</label>
-        <input type="text" id="nom" placeholder="Ex: Joan Garcia" required>
+        <input type="text" id="nom" name="nom"
+               placeholder="Ex: Joan Garcia"
+               minlength="3" maxlength="60"
+               pattern="[A-Za-zÀ-ÿ\s]{3,60}"
+               required>
       </div>
 
-      
+      <!-- EMAIL -->
       <div class="form-group">
         <label for="email">Correu electrònic:</label>
-        <input type="email" id="email" placeholder="nom@exemple.com" required>
+        <input type="email" id="email" name="email"
+               placeholder="nom@exemple.com"
+               required>
       </div>
 
-      
+      <!-- TELÈFON -->
       <div class="form-group">
         <label for="telefon">Telèfon:</label>
-        <input type="tel" id="telefon" placeholder="600000000" required>
+        <input type="tel" id="telefon" name="telefon"
+               placeholder="600000000"
+               pattern="[0-9]{9}"
+               maxlength="9"
+               required>
       </div>
 
-      
+      <!-- DATA NAIXEMENT -->
       <div class="form-group">
         <label for="data-naixement">Data de naixement:</label>
-        <input type="date" id="data-naixement" required>
+        <input type="date" id="data-naixement" name="data-naixement"
+               min="1900-01-01" max="2010-12-31"
+               required>
       </div>
 
-      
+      <!-- CONDICIONS -->
       <div class="form-group">
         <label>
-          <input type="checkbox" id="condicions" required>
+          <input type="checkbox" id="condicions" name="condicions" required>
           Accepto les condicions de compra
         </label>
       </div>
 
-      
+      <!-- PREU -->
       <div class="price-box">
         <div>Preu Total (inclou 5€ de despeses de gestió):</div>
         <span id="preu-total">35 €</span>
       </div>
 
-      
       <button type="submit" class="btn-submit">Confirmar i Comprar</button>
 
     </form>
@@ -75,7 +86,6 @@
 
   <a href="index.html" class="btn-back">Tornar a l'Inici</a>
 
-  
   <script src="js/entrades.js"></script>
 
 </body>
