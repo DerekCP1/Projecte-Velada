@@ -14,6 +14,10 @@ document.getElementById("btn-entrades").onclick = function() {
   window.location.href = "entrades.html";
 };
 
+document.getElementById("btn-participa").onclick = function() {
+  window.location.href = "participa.html";
+};
+
 var DATA_VELADA = new Date("2027-07-24T20:00:00").getTime();
 
 function actualitzarCompteEnrere() {
