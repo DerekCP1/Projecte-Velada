@@ -2,68 +2,43 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>Participa i Premsa - La Velada 7</title>
-  <link rel="stylesheet" href="css/participa.css">
+  <title>Formulari de Contacte</title>
 </head>
 <body>
 
-  <h1>📋 Sol·licituds i Acreditacions</h1>
+  <h1>Formulari de Contacte</h1>
 
-  <div class="card">
-    <form id="form-participa">
-      
-      <!-- Tipus de sol·licitud -->
-      <div class="form-group">
-        <label for="tipus">Tipus de sol·licitud:</label>
-        <select id="tipus" required>
-          <option value="Casting">Casting propera edició</option>
-          <option value="Voluntariat / Staff">Voluntariat i Staff</option>
-          <option value="Acreditació de premsa">Acreditació de premsa</option>
-        </select>
-      </div>
+  <form>
 
-      <!-- Nom i cognoms -->
-      <div class="form-group">
-        <label for="nom">Nom i cognoms:</label>
-        <input type="text" id="nom" placeholder="Ex: Marc Soler" required>
-      </div>
+    <!-- NOM -->
+    <label>Nom i cognoms:</label><br>
+    <input type="text" required minlength="3" maxlength="50"><br><br>
 
-      <!-- Correu electrònic -->
-      <div class="form-group">
-        <label for="email">Correu electrònic:</label>
-        <input type="email" id="email" placeholder="nom@exemple.com" required>
-      </div>
+    <!-- EMAIL -->
+    <label>Correu electrònic:</label><br>
+    <input type="email" required maxlength="60"><br><br>
 
-      <div class="form-group">
-        <label for="telefon">Telèfon de contacte:</label>
-        <input type="tel" id="telefon" placeholder="600000000" required>
-      </div>
+    <!-- TELÈFON -->
+    <label>Telèfon (9 dígits):</label><br>
+    <input type="tel" required maxlength="9" pattern="[0-9]{9}"><br><br>
 
-      <div class="form-group">
-        <label for="mitja">Mitjà de comunicació / Xarxes socials / Perfil:</label>
-        <input type="text" id="mitja" placeholder="Ex: @elmeuperfil / Periòdic X / Canal Twitch" required>
-      </div>
+    <!-- DATA NAIXEMENT -->
+    <label>Data de naixement:</label><br>
+    <input type="date" required min="1900-01-01" max="2010-12-31"><br><br>
 
-      <div class="form-group">
-        <label for="missatge">Motiu de la sol·licitud / Observacions:</label>
-        <textarea id="missatge" rows="4" placeholder="Explica'ns breument per què vols participar o quin mitjà representes..." required></textarea>
-      </div>
+    <!-- OBSERVACIONS -->
+    <label>Observacions (màx 200 caràcters):</label><br>
+    <textarea required maxlength="200"></textarea><br><br>
 
-      <div class="form-group">
-        <label>
-          <input type="checkbox" id="condicions" required>
-          Accepto les condicions i el tractament de dades
-        </label>
-      </div>
+    <!-- CHECK -->
+    <label>
+      <input type="checkbox" required>
+      Accepto les condicions
+    </label><br><br>
 
-      <button type="submit" class="btn-submit">Enviar Sol·licitud</button>
+    <button type="submit">Enviar</button>
 
-    </form>
-  </div>
-
-  <a href="index.html" class="btn-back">Tornar a l'Inici</a>
-
-  <script src="js/participa.js"></script>
+  </form>
 
 </body>
 </html>
