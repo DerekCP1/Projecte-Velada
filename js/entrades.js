@@ -11,6 +11,7 @@ function calcularPreu() {
 
   const total = (preuZona * quantitat) + despesesGestio;
   spanPreuTotal.textContent = total + " €";
+  return total;
 }
 
 // Actualitzar el preu quan canvia la zona o el nombre d'entrades
@@ -26,8 +27,8 @@ formEntrades.onsubmit = function(event) {
   const telefon = document.getElementById("telefon").value.trim();
 
   // Validar nom
-  if (!/^[A-Za-zÀ-ÿ\s]{3,60}$/.test(nom)) {
-    alert("Camp incorrecte: el nom només pot contenir lletres i espais.");
+  if (!/^[A-Za-zà-ÿ\s]{3,60}$/.test(nom)) {
+    alert("Camp nom incorrecte. Només es permeten lletres i espais.");
     return;
   }
 
@@ -43,14 +44,32 @@ formEntrades.onsubmit = function(event) {
     return;
   }
 
+  // Alerta d'agraïment original
   alert(
     "Gràcies per la teva compra, " +
     nom +
     "! Les teves entrades s'han reservat correctament."
   );
 
-  formEntrades.reset();
-  calcularPreu();
+  // Generar el resum i el codi de reserva
+  const codiReserva = "VELADA7-" + Math.floor(Math.random() * 90000 + 10000);
+  const total = calcularPreu();
+  const quantitat = inputNumEntrades.value;
+
+  // Ocultar el formulari
+  formEntrades.style.display = "none";
+
+  // Mostrar les dades al resum
+  document.getElementById("resum-text").innerHTML = 
+    "<strong>Nom:</strong> " + nom + "<br>" +
+    "<strong>Email:</strong> " + email + "<br>" +
+    "<strong>Telèfon:</strong> " + telefon + "<br>" +
+    "<strong>Entrades:</strong> " + quantitat + "<br>" +
+    "<strong>Total:</strong> " + total + " €";
+
+  document.getElementById("resum-codi").textContent = "Codi de reserva: " + codiReserva;
+  
+  document.getElementById("resum").style.display = "block";
 };
 
 // Calcular preu inicial
