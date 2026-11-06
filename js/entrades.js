@@ -3,7 +3,36 @@ const inputNumEntrades = document.getElementById("num-entrades");
 const spanPreuTotal = document.getElementById("preu-total");
 const formEntrades = document.getElementById("form-entrades");
 
-// Funció per calcular el preu total (Preu zona * quantitat + 5€ de gestió)
+const nom = document.getElementById("nom");
+const email = document.getElementById("email");
+const telefon = document.getElementById("telefon");
+
+// Missatges personalitzats
+nom.addEventListener("invalid", function () {
+  this.setCustomValidity("Camp incorrecte. Només es permeten lletres i espais.");
+});
+
+nom.addEventListener("input", function () {
+  this.setCustomValidity("");
+});
+
+telefon.addEventListener("invalid", function () {
+  this.setCustomValidity("Camp incorrecte. El telèfon ha de tenir 9 dígits.");
+});
+
+telefon.addEventListener("input", function () {
+  this.setCustomValidity("");
+});
+
+email.addEventListener("invalid", function () {
+  this.setCustomValidity("Camp incorrecte. Introdueix un correu electrònic vàlid.");
+});
+
+email.addEventListener("input", function () {
+  this.setCustomValidity("");
+});
+
+// Funció per calcular el preu total
 function calcularPreu() {
   const preuZona = parseFloat(selectZona.value);
   const quantitat = parseInt(inputNumEntrades.value) || 1;
@@ -13,39 +42,21 @@ function calcularPreu() {
   spanPreuTotal.textContent = total + " €";
 }
 
-// Actualitzar el preu quan canvia la zona o el nombre d'entrades
+// Actualitzar preu
 selectZona.onchange = calcularPreu;
 inputNumEntrades.oninput = calcularPreu;
 
-// Missatge de confirmació en enviar el formulari
-formEntrades.onsubmit = function(event) {
+// Enviar formulari
+formEntrades.onsubmit = function (event) {
   event.preventDefault();
 
-  const nom = document.getElementById("nom").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const telefon = document.getElementById("telefon").value.trim();
-
-  // Validar nom
-  if (!/^[A-Za-zÀ-ÿ\s]{3,60}$/.test(nom)) {
-    alert("Camp incorrecte: el nom només pot contenir lletres i espais.");
-    return;
-  }
-
-  // Validar telèfon
-  if (!/^[0-9]{9}$/.test(telefon)) {
-    alert("Camp incorrecte: el telèfon ha de tenir 9 números.");
-    return;
-  }
-
-  // Validar correu electrònic
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    alert("Camp incorrecte: introdueix un correu electrònic vàlid.");
+  if (!formEntrades.checkValidity()) {
     return;
   }
 
   alert(
     "Gràcies per la teva compra, " +
-    nom +
+    nom.value +
     "! Les teves entrades s'han reservat correctament."
   );
 
@@ -53,5 +64,5 @@ formEntrades.onsubmit = function(event) {
   calcularPreu();
 };
 
-// Calcular preu inicial
+// Preu inicial
 calcularPreu();
