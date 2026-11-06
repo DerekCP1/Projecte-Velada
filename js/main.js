@@ -1,4 +1,3 @@
-// --- Mode fosc / clar ---
 
 var botoTema = document.getElementById("theme-toggle");
 
@@ -8,15 +7,12 @@ function aplicarTema(tema) {
   localStorage.setItem("tema", tema);
 }
 
-// Por defecto la web es oscura; solo cambia si el usuario eligió "light"
 aplicarTema(localStorage.getItem("tema") || "dark");
 
 botoTema.onclick = function() {
   var actual = document.documentElement.getAttribute("data-theme");
   aplicarTema(actual === "light" ? "dark" : "light");
 };
-
-// --- Botons de navegació ---
 
 document.getElementById("btn-combats").onclick = function() {
     window.location.href = "combats.html";
@@ -67,8 +63,6 @@ function actualitzarCompteEnrere() {
 
 actualitzarCompteEnrere();                  
 setInterval(actualitzarCompteEnrere, 1000); 
-
-// --- Enllaços del footer ---
 
 document.getElementById("privacitat").onclick = function() {
     window.location.href = "privacitat.html";

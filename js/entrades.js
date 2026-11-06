@@ -1,10 +1,9 @@
-// Elements del DOM
+
 const selectZona = document.getElementById("zona");
 const inputNumEntrades = document.getElementById("num-entrades");
 const spanPreuTotal = document.getElementById("preu-total");
 const formEntrades = document.getElementById("form-entrades");
 
-// 1. Funció per calcular el preu total
 function calcularPreu() {
   const preuZona = parseFloat(selectZona.value);
   const quantitat = parseInt(inputNumEntrades.value) || 1;
@@ -14,11 +13,9 @@ function calcularPreu() {
   return total;
 }
 
-// Escuchar canvis al formulari
 selectZona.onchange = calcularPreu;
 inputNumEntrades.oninput = calcularPreu;
 
-// 2. Enviar i validar formulari
 formEntrades.onsubmit = function(event) {
   event.preventDefault();
 
@@ -26,7 +23,6 @@ formEntrades.onsubmit = function(event) {
   const email = document.getElementById("email").value.trim();
   const telefon = document.getElementById("telefon").value.trim();
 
-  // Validació per Regex (Nom, Telèfon i Email)
   if (!/^[A-Za-zà-ÿ\s]{3,60}$/.test(nom)) {
     return alert("Camp nom incorrecte. Només es permeten lletres i espais.");
   }
@@ -37,18 +33,14 @@ formEntrades.onsubmit = function(event) {
     return alert("Camp incorrecte: introdueix un correu electrònic vàlid.");
   }
 
-  // Alerta d'agraïment
   alert(`Gràcies per la teva compra, ${nom}! Les teves entrades s'han reservat correctament.`);
 
-  // Generar codi i resum de compra
   const codiReserva = "VELADA7-" + Math.floor(Math.random() * 90000 + 10000);
   const total = calcularPreu();
   const quantitat = inputNumEntrades.value;
 
-  // Ocultar formulari
   formEntrades.style.display = "none";
 
-  // Mostrar el resum dinàmic
   document.getElementById("resum-text").innerHTML = `
     <strong>Nom:</strong> ${nom}<br>
     <strong>Email:</strong> ${email}<br>
@@ -61,5 +53,4 @@ formEntrades.onsubmit = function(event) {
   document.getElementById("resum").style.display = "block";
 };
 
-// Càlcul inicial en carregar la pàgina
 calcularPreu();
