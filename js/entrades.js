@@ -27,24 +27,31 @@ formEntrades.onsubmit = function(event) {
 
   // Validar nom
   if (!/^[A-Za-zÀ-ÿ\s]{3,60}$/.test(nom)) {
-    alert("Camp nom incorrecte. Només es permeten lletres i espais.");
+    alert("Camp incorrecte: el nom només pot contenir lletres i espais.");
     return;
   }
 
   // Validar telèfon
   if (!/^[0-9]{9}$/.test(telefon)) {
-    alert("Camp telèfon incorrecte. Ha de tenir 9 números.");
+    alert("Camp incorrecte: el telèfon ha de tenir 9 números.");
     return;
   }
 
-  // Validar correu
+  // Validar correu electrònic
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    alert("Camp correu electrònic incorrecte.");
+    alert("Camp incorrecte: introdueix un correu electrònic vàlid.");
     return;
   }
 
-  alert("Gràcies per la teva compra, " + nom + "! Les teves entrades s'han reservat correctament.");
+  alert(
+    "Gràcies per la teva compra, " +
+    nom +
+    "! Les teves entrades s'han reservat correctament."
+  );
 
   formEntrades.reset();
   calcularPreu();
 };
+
+// Calcular preu inicial
+calcularPreu();
