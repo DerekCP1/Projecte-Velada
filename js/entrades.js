@@ -19,11 +19,32 @@ inputNumEntrades.oninput = calcularPreu;
 
 // Missatge de confirmació en enviar el formulari
 formEntrades.onsubmit = function(event) {
-  event.preventDefault(); // Evita que la pàgina es recarregui
- 
-  const nom = document.getElementById("nom").value;
+  event.preventDefault();
+
+  const nom = document.getElementById("nom").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const telefon = document.getElementById("telefon").value.trim();
+
+  // Validar nom
+  if (!/^[A-Za-zÀ-ÿ\s]{3,60}$/.test(nom)) {
+    alert("Camp nom incorrecte. Només es permeten lletres i espais.");
+    return;
+  }
+
+  // Validar telèfon
+  if (!/^[0-9]{9}$/.test(telefon)) {
+    alert("Camp telèfon incorrecte. Ha de tenir 9 números.");
+    return;
+  }
+
+  // Validar correu
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    alert("Camp correu electrònic incorrecte.");
+    return;
+  }
+
   alert("Gràcies per la teva compra, " + nom + "! Les teves entrades s'han reservat correctament.");
- 
-  formEntrades.reset(); // Neteja el formulari
-  calcularPreu(); // Torna a calcular el preu base
+
+  formEntrades.reset();
+  calcularPreu();
 };
